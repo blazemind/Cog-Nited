@@ -1,0 +1,4 @@
+azure-functions
+openai==0.28.1
+pydantic
+azure-ai-vision-imageanalysis

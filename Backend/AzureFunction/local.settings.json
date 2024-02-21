@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+    "Values": {
+        "AzureWebJobsStorage": "",
+        "OPENAI_API_KEY": "",
+        "OPENAI_API_BASE": "",
+        "VISION_KEY": "",
+        "VISION_ENDPOINT": "",
+        "FUNCTIONS_WORKER_RUNTIME": "python"
+    },
+    "Host": {
+        "CORS": "*"
+    }
+}

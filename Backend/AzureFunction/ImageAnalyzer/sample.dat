@@ -1,0 +1,5 @@
+{
+    "model" : "gpt-35-turbo",
+    "tone" : "Answer like a smart AI assistant",
+    "query" : "Can you write a python code for fibonacci series?"
+}
