@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 ## Overview
 
 CogNited is an innovative application designed to recognize food items in images uploaded from an IoT Raspberry Pi device or through a web-based frontend application. Utilizing advanced AI capabilities, CogNited identifies various food items in the uploaded pictures and generates corresponding recipes for the user. This application leverages Azure OpenAI and Azure Vision APIs to accurately process and analyze images, providing users with instant culinary inspiration based on the ingredients they have on hand.
