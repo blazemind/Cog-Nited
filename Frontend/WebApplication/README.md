@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # CogNited
 
 CogNited is a cutting-edge Vite React JS application designed to revolutionize the way we interact with food. By allowing users to upload images of food items, CogNited leverages advanced Azure AI Vision services to detect the food items in the images. Once identified, the application leverages Azure OpenAI service to suggest a variety of recipes that utilize these food items, offering users new and exciting culinary experiences.

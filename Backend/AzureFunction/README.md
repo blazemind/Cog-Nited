@@ -1,5 +1,3 @@
-[[_TOC_]]
-
 # ImageAnalyzer API
 
 The ImageAnalyzer API is a serverless solution built on Azure Functions. It is designed to take binary image input, analyze it using Azure Vision AI to identify items within the image, and then use Azure OpenAI to generate recipes related to the identified food items. This API is intended to be called from a front-end Vite React JS application named CogNited.
