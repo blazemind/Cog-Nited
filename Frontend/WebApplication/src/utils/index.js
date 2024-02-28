@@ -21,7 +21,7 @@ export const splitMarkdownToDict = (markdown) => {
   const recipes = [];
 
   while ((match = recipeRegex.exec(markdown)) !== null) {
-    const title = match[1].trim().replace(/Recipe \d+: /, '');
+    const title = match[1].trim().replace(/Recipe \d+: /, "");
     const recipe = {
       key: idCounter,
       id: idCounter.toString(),
@@ -33,4 +33,15 @@ export const splitMarkdownToDict = (markdown) => {
     idCounter++;
   }
   return recipes;
+};
+
+export const base64ToArrayBuffer = (base64) => {
+  const base64WithoutPrefix = base64.split(',')[1]; // Remove the prefix
+  const binaryString = window.atob(base64WithoutPrefix); // Base64 decode
+  const len = binaryString.length;
+  const bytes = new Uint8Array(len);
+  for (let i = 0; i < len; i++) {
+      bytes[i] = binaryString.charCodeAt(i);
+  }
+  return bytes.buffer; // Return ArrayBuffer
 }
