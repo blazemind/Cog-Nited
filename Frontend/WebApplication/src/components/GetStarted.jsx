@@ -10,9 +10,17 @@ function GetStarted(props) {
 
   const mqtt_broker = `${import.meta.env.VITE_REACT_APP_MQTT_BROKER}`
   const mqtt_topic = `${import.meta.env.VITE_REACT_APP_MQTT_TOPIC}`
+  const mqtt_user = `${import.meta.env.VITE_REACT_APP_MQTT_USER}`; 
+  const mqtt_password = `${import.meta.env.VITE_REACT_APP_MQTT_PASSWORD}`; 
+
 
   useEffect(() => {
-    const client = mqtt.connect(mqtt_broker); 
+    const options = {
+      username: mqtt_user,
+      password: mqtt_password
+    };
+
+    const client = mqtt.connect(mqtt_broker, options); 
 
     client.on('connect', () => {
       console.log('Connected to MQTT broker');
