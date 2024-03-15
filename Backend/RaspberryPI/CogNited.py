@@ -19,12 +19,12 @@ GPIO.setup(TRIG, GPIO.OUT)
 GPIO.setup(ECHO, GPIO.IN)
 
 # MQTT Broker Configurations
-broker = 'm12.cloudmqtt.com'
-port = 17939
+broker =''
+port = 
 topic = "cognited/image"
 client_id = f'python-mqtt-{random.randint(0, 1000)}'
-username = 'fpretkxq'
-password = 'BJK10l6-BAOt'
+username = ''
+password = ''
 
 # Function to publish the image to MQTT
 def publish_image(image):
